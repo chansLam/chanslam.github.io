@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DiPlay 测试版下载</title>
+<style>
+  :root { --accent: #0a84ff; --bg: #0f1115; --card: #1a1d24; --text: #e6e8eb; --muted: #9aa0a6; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--text); font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 24px; }
+  .card { background: var(--card); border-radius: 16px; padding: 40px 32px; max-width: 420px; width: 100%; text-align: center; box-shadow: 0 8px 32px rgba(0,0,0,.35); }
+  .logo { width: 72px; height: 72px; border-radius: 18px; background: linear-gradient(135deg, var(--accent), #5ac8fa); display: flex; align-items: center; justify-content: center; font-size: 34px; font-weight: 800; margin: 0 auto 20px; color: #fff; }
+  h1 { font-size: 24px; margin-bottom: 6px; }
+  .sub { color: var(--muted); font-size: 14px; margin-bottom: 24px; }
+  .version { display: inline-block; background: rgba(10,132,255,.12); color: var(--accent); border-radius: 999px; padding: 4px 14px; font-size: 13px; font-weight: 600; margin-bottom: 28px; }
+  .btn { display: block; width: 100%; padding: 14px; background: var(--accent); color: #fff; border-radius: 12px; text-decoration: none; font-size: 16px; font-weight: 700; margin-bottom: 12px; transition: filter .15s; }
+  .btn:hover { filter: brightness(1.08); }
+  .meta { color: var(--muted); font-size: 12px; line-height: 1.8; text-align: left; padding: 16px; background: rgba(255,255,255,.04); border-radius: 10px; margin-top: 8px; }
+  .meta b { color: var(--text); }
+  footer { margin-top: 20px; color: var(--muted); font-size: 11px; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="logo">D</div>
+    <h1>DiPlay 测试版</h1>
+    <div class="sub">长安 CS75 Plus 2020 车机 · 无线 CarPlay</div>
+    <div class="version">v1.0.0</div>
+    <a class="btn" href="downloads/DiPlay-v1.0.0-test.apk" download>下载 APK（9.0 MB）</a>
+    <div class="meta">
+      <b>安装说明：</b><br>
+      1. 若装过其他签名版本，请先卸载旧版<br>
+      2. APK 安装到<b>车机</b>（不是 iPhone）<br>
+      3. 手机连上车机热点，保持蓝牙开启<br>
+      4. 打开 DiPlay，点「连接手机」，iPhone 上允许 CarPlay
+    </div>
+    <footer>测试版仅供验证 · 正式版见 DiPlay-CS75Plus-2020 仓库 Release</footer>
+  </div>
+</body>
+</html>
