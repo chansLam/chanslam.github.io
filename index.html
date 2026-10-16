@@ -37,8 +37,8 @@
     <a class="btn2" href="https://fastly.jsdelivr.net/gh/chansLam/chanslam.github.io@main/downloads/DiPlay-v1.0.1-test.apk" download>加速线路 4 · Fastly</a>
     <a class="btn2" href="upload.html" style="border-color:#2e5fd0;color:#6ea8ff">上传诊断日志 · 车机浏览器用</a>
     <div class="meta">
-      <b>本次测试内容：</b>UI 深蓝渐变皮肤 + 左侧导航三栏骨架 + <b>新增「通话音频流」声道设置</b>（本次重点）+ 通话下行诊断日志<br><br>
-      <b>通话无声排查方法（请逐个试）：</b>设置 → 音频路由 → 「通话音频流」，默认0（媒体流），可试 5 / 10（你验证过媒体10音乐走导航能响）/ 3 等值，每试一个打一次电话。同时设置里「诊断 → 保存诊断报告」，看是否出现「telephony downlink started」区分是通道问题还是通话数据没进来。
+      <b>本次测试内容：</b>UI 深蓝渐变皮肤 + 左侧导航三栏骨架 + 通话声道设置 + <b>★通话无声根因修复</b>：日志定位到通话用 OPUS 编码、API19 车机无 OPUS 解码器（解码失败→无声）。已改为下行只协商 PCM（LPCM），iPhone 改用 PCM 通话，无需 OPUS 解码器。<br><br>
+      <b>请重点验证通话：</b>装好后打一个电话，听双方声音。若仍无声，再试「通话音频流」声道（0/5/10），并保存诊断报告上传给我。
       <b>安装说明：</b><br>
       1. 若装过其他签名版本，请先卸载旧版<br>
       2. APK 安装到<b>车机</b>（不是 iPhone）<br>
