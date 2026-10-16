@@ -15,6 +15,9 @@
   .version { display: inline-block; background: rgba(10,132,255,.12); color: var(--accent); border-radius: 999px; padding: 4px 14px; font-size: 13px; font-weight: 600; margin-bottom: 28px; }
   .btn { display: block; width: 100%; padding: 14px; background: var(--accent); color: #fff; border-radius: 12px; text-decoration: none; font-size: 16px; font-weight: 700; margin-bottom: 12px; transition: filter .15s; }
   .btn:hover { filter: brightness(1.08); }
+  .btn2 { display: block; width: 100%; padding: 12px; background: transparent; color: var(--accent); border: 1px solid var(--accent); border-radius: 12px; text-decoration: none; font-size: 14px; font-weight: 600; margin-bottom: 10px; transition: filter .15s; }
+  .btn2:hover { filter: brightness(1.12); }
+  .hint { color: var(--muted); font-size: 11px; margin: -4px 0 14px; line-height: 1.6; }
   .meta { color: var(--muted); font-size: 12px; line-height: 1.8; text-align: left; padding: 16px; background: rgba(255,255,255,.04); border-radius: 10px; margin-top: 8px; }
   .meta b { color: var(--text); }
   footer { margin-top: 20px; color: var(--muted); font-size: 11px; }
@@ -26,7 +29,10 @@
     <h1>DiPlay 测试版</h1>
     <div class="sub">长安 CS75 Plus 2020 车机 · 无线 CarPlay</div>
     <div class="version">v1.0.1 · 移植测试 + 新增量</div>
-    <a class="btn" href="downloads/DiPlay-v1.0.1-test.apk" download>下载 APK（9.0 MB）</a>
+    <a class="btn" href="downloads/DiPlay-v1.0.1-test.apk" download>下载 APK（9.0 MB）· 推荐</a>
+    <div class="hint">加速线路走 CDN，更新后可能稍等生效；直连始终最新</div>
+    <a class="btn2" href="https://cdn.jsdelivr.net/gh/chansLam/chanslam.github.io@main/downloads/DiPlay-v1.0.1-test.apk" download>加速线路 1 · jsDelivr</a>
+    <a class="btn2" href="https://fastly.jsdelivr.net/gh/chansLam/chanslam.github.io@main/downloads/DiPlay-v1.0.1-test.apk" download>加速线路 2 · Fastly</a>
     <div class="meta">
       <b>本次测试内容：</b>UI 深蓝渐变皮肤 + 左侧导航三栏骨架 + <b>修复通话无声</b>（去 MODE_IN_COMMUNICATION，通话走媒体扬声器）+ 5 个新增量 + 方控 API19 修复 + 视频解码器版本保护<br><br>
       <b>安装说明：</b><br>
