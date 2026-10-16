@@ -36,7 +36,8 @@
     <a class="btn2" href="https://cdn.jsdelivr.net/gh/chansLam/chanslam.github.io@main/downloads/DiPlay-v1.0.1-test.apk" download>加速线路 3 · jsDelivr</a>
     <a class="btn2" href="https://fastly.jsdelivr.net/gh/chansLam/chanslam.github.io@main/downloads/DiPlay-v1.0.1-test.apk" download>加速线路 4 · Fastly</a>
     <div class="meta">
-      <b>本次测试内容：</b>UI 深蓝渐变皮肤 + 左侧导航三栏骨架 + <b>修复导航/通话无声</b>（车机只响媒体流，强制导航/通话/媒体全部走媒体扬声器）+ 5 个新增量 + 方控 API19 修复 + 视频解码器版本保护<br><br>
+      <b>本次测试内容：</b>UI 深蓝渐变皮肤 + 左侧导航三栏骨架 + 导航/通话强制走媒体扬声器 + <b>通话下行诊断日志</b>（本次新增，用于定位通话仍无声）<br><br>
+      <b>通话无声诊断方法：</b>装好后打电话，通话时进 DiPlay 设置 → 诊断 → 保存诊断报告。若报告出现「telephony downlink started」→ 本地收到通话流、播放问题；若没有 → 手机端没把通话音频发给车机。
       <b>安装说明：</b><br>
       1. 若装过其他签名版本，请先卸载旧版<br>
       2. APK 安装到<b>车机</b>（不是 iPhone）<br>
