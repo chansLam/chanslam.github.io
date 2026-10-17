@@ -25,15 +25,13 @@
     <ol>
       <li>先在 DiPlay：<b>设置 → 诊断 → 保存诊断报告</b>（记下保存路径，一般含 <code>.txt</code>）</li>
       <li>回到本页，点下面按钮选择刚才保存的日志文件</li>
-      <li>点「上传」，上传完成后把出现的<b>下载链接</b>复制发给我</li>
+      <li>点「上传」，<b>会自动跳到结果页</b>（一串 JSON 文本），找到里面 <code>"url": "https://..."</code> 的完整链接，复制发给我</li>
     </ol>
-    <form action="https://litterbox.catbox.moe/resources/internals/api.php" method="post" enctype="multipart/form-data">
-      <input type="hidden" name="reqtype" value="fileupload">
-      <input type="hidden" name="time" value="72h">
-      <input type="file" name="fileToUpload" required>
+    <form action="https://uguu.se/upload" method="post" enctype="multipart/form-data">
+      <input type="file" name="files[]" required>
       <button type="submit">上传日志</button>
     </form>
-    <p class="hint">文件保留 72 小时。若本页上传按钮不可用，可改在手机浏览器打开本页上传，或手动访问 <code>litterbox.catbox.moe</code> 上传后把链接发我。</p>
+    <p class="hint">上传后结果页是一段 JSON，复制其中的 <code>url</code> 链接（形如 <code>https://h.uguu.se/xxxx.log</code>）发我即可。若结果页显示 <code>"success": false</code>，说明服务暂不可用，稍后再试。文件为临时托管，请尽快发送。</p>
   </div>
 </body>
 </html>
