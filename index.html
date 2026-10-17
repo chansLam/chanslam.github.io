@@ -28,7 +28,7 @@
     <div class="logo">D</div>
     <h1>DiPlay 测试版</h1>
     <div class="sub">长安 CS75 Plus 2020 车机 · 无线 CarPlay</div>
-    <div class="version">v1.1.1 · 通话修复 · 蓝牙增强 · UI 美化</div>
+    <div class="version">v1.1.1 · 连接方式修复 · 局域网改造 · 蓝牙增强</div>
     <a class="btn" href="downloads/DiPlay-v1.1.1-test.apk" download>下载 APK（8.8 MB）· 推荐</a>
     <div class="hint">国内线路走 GitHub 代理、实时最新；jsDelivr/Fastly 走 CDN 缓存，更新后可能稍等生效</div>
     <a class="btn2" href="https://ghfast.top/https://raw.githubusercontent.com/chansLam/chanslam.github.io/main/downloads/DiPlay-v1.1.1-test.apk" download>国内加速 1 · ghfast</a>
@@ -37,7 +37,7 @@
     <a class="btn2" href="https://fastly.jsdelivr.net/gh/chansLam/chanslam.github.io@main/downloads/DiPlay-v1.1.1-test.apk" download>加速线路 4 · Fastly</a>
     <a class="btn2" href="upload.html" style="border-color:#2e5fd0;color:#6ea8ff">上传诊断日志 · 车机浏览器用</a>
     <div class="meta">
-      <b>本次测试内容：</b>★通话修复：电话走独立通话声道（不再被车机静音媒体通道影响），音乐/导航各有声。<b>音频通道</b>默认媒体5 / 导航10 / 通话0，设置页可调。<b>热点/WiFi</b>：切到热点自动开热点、另两tab自动开WiFi，热点名称/密码持久记录，连接方式保存重启记住。<b>蓝牙</b>：多台已连时优先识别 iPhone，状态卡显示开关状态，可一键开启。<b>悬浮球取舍</b>：只保留小白球并改为 DiPlay 图标样式。<b>UI 美化</b>：深蓝渐变背景 + 玻璃卡片 + 品牌区 + 状态徽章 + 连接中心横幅。<b>系统设置</b>：从设置面板移到应用列表「安卓设置」，ACTION_SETTINGS 失败走工程码 *#518200#* 保底。<b>请重点验证：</b>电话/音乐/导航是否有声；热点连接与 WiFi 直连；蓝牙设备显示；悬浮球；新 UI 观感。<br><br>
+      <b>本次测试内容：</b>★连接方式切换修复：切到直连真正走 P2P 直连（不再残留热点模式）；切直连/局域网前自动关热点再开 WiFi。<b>局域网改造</b>：车机已连 WiFi 直接显示「已连接 + 连接 CarPlay + 选择其它 WiFi」，未连则只显示附近 WiFi 列表（二选一互斥）；连接 WiFi 会轮询认证状态，连不上明确报错。<b>热点</b>：热点密码去掉引号包裹（适配 CS75 ROM，与界面/通知一致），热点名称/密码持久记录。<b>蓝牙</b>：初次启动即显示已连设备名（回退已配对 iPhone），多台已连优先识别 iPhone，状态卡显示开关。<b>闪退修复</b>：应用列表后台刷新在 Fragment 已 detach 时不再崩溃。<b>系统设置</b>：移到应用列表「安卓设置」，ACTION_SETTINGS 失败走工程码 *#518200#* 保底。<b>UI 美化</b>：深蓝渐变背景 + 玻璃卡片 + 品牌区 + 状态徽章 + 连接中心横幅。<b>请重点验证：</b>热点→直连→局域网三种方式切换是否各走各的；已连 WiFi 显示与连接 CarPlay；WiFi 红色密码问题是否改善；蓝牙设备名显示；应用列表不再闪退。<br><br>
       <b>安装说明：</b><br>
       1. 若装过其他签名版本，请先卸载旧版<br>
       2. APK 安装到<b>车机</b>（不是 iPhone）<br>
